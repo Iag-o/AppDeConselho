@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDeConselho.MainPage"
+             BackgroundImageSource="fundo.jpg"
+             BackgroundColor="#6A5ACD">
+
+
+    <ContentPage.Content>
+
+
+        <StackLayout
+            BackgroundColor="#836FFF" 
+            Padding="10"
+            Margin="20">
+
+            <Label HorizontalOptions="Center" 
+                   FontSize="Title" FontAttributes="Bold"
+                   Text="Seja Feliz ;)" TextColor="Black"
+                   Padding="10"/>
+
+            
+
+            <Frame
+                BackgroundColor="#E6E6FA"
+                Padding="30"
+                HorizontalOptions="CenterAndExpand"
+                CornerRadius="999">
+
+                <StackLayout>
+                    <Label Text="{Binding Id}" 
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="#4B0082"
+                           />
+
+
+                    <Label Text="{Binding Conselho}"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="Large"
+                           TextColor="#4B0082"/>
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Seja Bilingue e Feliz ;)"
+                    TextColor="#4B0082"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    BackgroundColor="#E6E6FA"
+                    CornerRadius="999"
+                    Margin="05"
+                    x:Name="bntMensagem"
+                    Clicked="bntMensagem_Clicked"/>
+
+            <Label Text="Veja conselhos para melhorar seu dia :D. É fato que pessoas são mais felizes quando tem o apoio de outras, Leia e se valorize cada vez mais ^3^"
+                   TextColor="#4B0082"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                   HorizontalOptions="Center"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
